@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"/>
+  <project name="tiger-cave/prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/system/core"/>
+  <project name="tiger-cave/system_core" path="system/core" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/qcom/audio"/>
+  <project name="tiger-cave/hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/qcom/display"/>
+  <project name="tiger-cave/hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/qcom/media"/>
+  <project name="tiger-cave/hardware_qcom_media" path="hardware/qcom/media" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/qcom/bt"/>
+  <project name="tiger-cave/hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/qcom/wlan"/>
+  <project name="tiger-cave/hardware_qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/qcom/gps"/>
+
+  <remove-project name="platform/hardware/ril"/>
+  <project name="tiger-cave/hardware_ril" path="hardware/ril" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/libhardware_legacy"/>
+  <project name="tiger-cave/hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/hardware/libhardware"/>
+  <project name="tiger-cave/hardware_libhardware" path="hardware/libhardware" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/bootable/recovery"/>
+  <project name="tiger-cave/bootable_recovery" path="bootable/recovery" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/frameworks/av"/>
+  <project name="tiger-cave/frameworks_av" path="frameworks/av" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/frameworks/native"/>
+  <project name="tiger-cave/frameworks_native" path="frameworks/native" remote="github" revision="android-11.0" />
+
+  <project name="tiger-cave/vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="android-11.0" />
+  <project name="tiger-cave/vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/build"/>
+  <project path="build/make" name="tiger-cave/build_make"  remote="github" revision="android-11.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/build/soong"/>
+  <project path="build/soong" name="tiger-cave/build_soong"  remote="github" revision="android-11.0" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <remove-project name="platform/art"/>
+  <project name="tiger-cave/art" path="art" remote="github" revision="android-11.0" />
+
+  <remove-project name="platform/external/perfetto"/>
+  <project name="tiger-cave/external_perfetto" path="external/perfetto" remote="github" revision="android-11.0" />
+</manifest>
