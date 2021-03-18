@@ -78,4 +78,6 @@
   <project name="tiger-cave/vendor_xiaomi_aries" path="vendor/xiaomi/aries" remote="github" revision="android-11.0" />
   <project name="tiger-cave/vendor_xiaomi_msm8960-common" path="vendor/xiaomi/msm8960-common" remote="github" revision="android-11.0" />
   <project name="tiger-cave/kernel_xiaomi_aries" path="kernel/xiaomi/aries" remote="github" revision="android-11.0" />
+
+  <project name="tiger-cave/hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="android-11.0" />
 </manifest>
