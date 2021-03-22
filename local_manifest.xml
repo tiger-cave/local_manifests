@@ -80,4 +80,7 @@
   <project name="tiger-cave/kernel_xiaomi_aries" path="kernel/xiaomi/aries" remote="github" revision="android-11.0" />
 
   <project name="tiger-cave/hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="android-11.0" />
+
+  <project name="tiger-cave/packages_apps_FMRadio" path="packages/apps/FMRadio" remote="github" revision="android-11.0" />
+  <project name="tiger-cave/vendor_qcom_opensource_libfmjni" path="vendor/qcom/opensource/libfmjni" remote="github" revision="android-11.0" />
 </manifest>
