@@ -68,9 +68,14 @@
   <remove-project name="platform/art"/>
   <project name="tiger-cave/art" path="art" remote="github" revision="android-11.0" />
 
+  <remove-project name="platform/bionic"/>
+  <project name="tiger-cave/bionic" path="bionic" remote="github" revision="android-11.0" />
+
   <remove-project name="platform/external/perfetto"/>
   <project name="tiger-cave/external_perfetto" path="external/perfetto" remote="github" revision="android-11.0" />
 
+  <project name="tiger-cave/prebuilts_tools-guaiyihu" path="prebuilts/tools-guaiyihu" remote="github" revision="android-11.0" />
+  <project name="tiger-cave/system_tools_dtbtool" path="system/tools/dtbtool" remote="github" revision="android-11.0" />
   <project name="tiger-cave/vendor_guaiyihu" path="vendor/guaiyihu" remote="github" revision="android-11.0" />
 
   <project name="tiger-cave/device_xiaomi_aries" path="device/xiaomi/aries" remote="github" revision="android-11.0" />
