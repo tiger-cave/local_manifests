@@ -14,3 +14,5 @@ Compile:
     . build/envsetup.sh
     lunch aosp_aries-userdebug
     make -jX otapackage
+
+![](pics/screenshot.png)
